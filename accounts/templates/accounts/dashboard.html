@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% include 'accounts/status.html' %}
+
+        <div class="row">
+            <div class="col-md-5">
+                <h5>CUSTOMERS:</h5>
+                <hr>
+                <div class="card card-body">
+                    <div class="d-grid gap-1">
+                        <a href="" class="btn btn-primary btn-sm" type="button">Create Customer</a>
+                    </div>
+                    <table class="table table-sm">
+                        <tr>
+                            <th></th>
+                            <th scope="col">Customer</th>
+                            <th scope="col">Orders</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h5>LAST 5 ORDERS:</h5>
+                <hr>
+                <div class="card card-body">
+                    <div class="d-grid gap-1">
+                        <a href="" class="btn btn-primary btn-sm" type="button">Create Order</a>
+                    </div>
+                    <table class="table table-sm">
+                        <tr>
+                            <th></th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Date Ordered</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Update</th>
+                            <th scope="col">Remove</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+{% endblock %}

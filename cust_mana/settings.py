@@ -134,9 +134,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 # SMTP Configuration
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 1025
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'zeanhuangskr@gmail.com'
-# EMAIL_HOST_PASSWORD = 'HeadJP5849'
-# EMAIL_USE_SSL = False
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = '18669862035@163.com'
+EMAIL_HOST_PASSWORD = 'YUZFFOKNSGJQOPXC'
+EMAIL_USE_SSL = False
+
+DEFAULT_FROM_EMAIL = '18669862035@163.com'
+
